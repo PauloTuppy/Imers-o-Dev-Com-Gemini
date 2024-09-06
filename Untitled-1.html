@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Atletas e Equipes de E-sports</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Busca de Atletas e Equipes de E-sports</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#csgo">CS:GO</a></li>
+            <li><a href="#lol">League of Legends</a></li>
+            <li><a href="#freefire">Free Fire</a></li>
+            <li><a href="#valorant">Valorant</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="game-grid">
+            <div id="csgo" class="game-card">
+                <img src="images/csgo.png" alt="Ícone representativo de CS:GO" />
+                <div class="game-card-content">
+                    <h3>CS:GO</h3>
+                    <p>Explore os melhores jogadores e equipes de Counter-Strike: Global Offensive.</p>
+                    <a href="/csgo-top.html" class="btn">Ver Detalhes</a>
+                    <form class="search-form" action="/search" method="get">
+                        <label for="csgo-search" class="visually-hidden">Buscar em CS:GO</label>
+                        <input type="hidden" name="game" value="csgo">
+                        <input type="text" id="csgo-search" name="q" class="search-input" placeholder="Buscar em CS:GO" aria-label="Buscar em CS:GO">
+                        <button type="submit" class="search-button">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Repeat structure for League of Legends and Free Fire -->
+            
+            <div id="valorant" class="game-card">
+                <img src="images/valorant.png" alt="Ícone representativo de Valorant" />
+                <div class="game-card-content">
+                    <h3>Valorant</h3>
+                    <p>Explore os melhores jogadores e equipes de Valorant.</p>
+                    <a href="/valorant-top.html" class="btn">Ver Detalhes</a>
+                    <form class="search-form" action="/search" method="get">
+                        <label for="valorant-search" class="visually-hidden">Buscar em Valorant</label>
+                        <input type="hidden" name="game" value="valorant">
+                        <input type="text" id="valorant-search" name="q" class="search-input" placeholder="Buscar em Valorant" aria-label="Buscar em Valorant">
+                        <button type="submit" class="search-button">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de Busca de E-sports. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
